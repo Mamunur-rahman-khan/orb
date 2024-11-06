@@ -10,6 +10,9 @@ import { FaSortDown, Fa2 } from "react-icons/fa6";
 import { PiVanFill } from "react-icons/pi";
 import Heading from './components/Heading'
 import Anchor from './components/Anchor'
+import ad_1 from './assets/Ad_1.jpg'
+import ad_2 from './assets/Ad_2.png'
+import ad_3 from './assets/Ad_3.jpg'
 
 function App() {
 
@@ -71,19 +74,35 @@ function App() {
       <div className='py-[30px] android:py-[10px] taplet:py-[20px] mobile:py-[10px] border-BorderInfoColor border-y'>
         <Container className={'max-w-headerContainer'}>
           <Flex className={'items-center justify-between'}>
-            <Flex className={'w-[20%]'}>
+            <Flex className={'w-[15%]'}>
               <Fa2 className='mr-2 text-[25px] android:text-[15px] mobile:text-[10px] mobile:mr-[3px]'/><Heading as='h4' text='Two years warranty' className='font-dms text-[16px] text-InformationColor android:text-[12px] mobile:text-[6px]'/>
             </Flex>
-            <Flex className={'w-[60%] justify-center'}>
+            <Flex className={'w-[70%] justify-center'}>
               <PiVanFill className='mr-3 text-[25px] android:text-[15px] mobile:text-[10px] mobile:mr-[3px]'/><Heading as='h4' text='Free shipping' className='font-dms text-[16px] text-InformationColor android:text-[12px] mobile:text-[6px]'/>
             </Flex>
-            <Flex className={'w-[20%] justify-end'}>
+            <Flex className={'w-[15%] justify-end'}>
               <FaUndo className='mr-3 text-[25px] taplet:text-[18px] android:text-[15px] mobile:text-[10px] mobile:mr-[3px]'/><Heading as='h4' text='Return policy in 30 days' className='font-dms text-[16px] text-InformationColor android:text-[10px] mobile:text-[6px]'/>
             </Flex>
           </Flex>
         </Container>
       </div>
       {/* Information Part End */}
+
+      {/* Ads Part Start */}
+      <div className='py-[80px]'>
+        <Container className={'max-w-headerContainer'}>
+          <Flex className={'justify-between'}>
+            <div className='w-[49%]'>
+            <img src={ad_1} alt={'ad_1'} />
+            </div>
+            <div className='w-[49%]'>
+              <img src={ad_2} alt={'ad_2'} />
+              <img src={ad_3} alt={'ad_3'} className='mt-[31px]' />
+            </div>
+          </Flex>
+        </Container>
+      </div>
+      {/* Ads Part End */}
     </>
   )
 }

@@ -22,7 +22,7 @@ export default {
         'Bannerimg': "url('../src/assets/bannerimg.png')",
       },
       maxWidth: {
-        'headerContainer': '1280px',
+        'headerContainer': '1200px',
         'laptopContainer': '900px',
         'tapletContainer': '700px',
         'androidContainer': '500px',
@@ -30,10 +30,10 @@ export default {
       },
       width: {
         'LogoW': '20%',
-        'MenuW': '50%',
-        'CatW': '10%',
-        'SearchW': '50%',
-        'UserW': '30%',
+        'MenuW': '70%',
+        'CatW': '20%',
+        'SearchW': '70%',
+        'UserW': '40%',
       },
       screens: {
       'laptop': {'min': '912px', 'max': '1218px',},
